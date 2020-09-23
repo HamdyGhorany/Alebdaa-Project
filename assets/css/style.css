@@ -446,7 +446,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #47b2e4;
 }
 
-#hero .animated {
+header .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -456,7 +456,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
   .logo {
-    display: none;
+    display: ;
   }
   #hero .animated {
     -webkit-animation: none;
@@ -3441,7 +3441,7 @@ a {
   right: -35px;
   width: 88px;
   height: 88px;
-  background: #0cc652;
+  background: #290cc6;
   opacity: 0.2;
   border-radius: 8px;
   transform: rotate(45deg);
@@ -3453,7 +3453,7 @@ a {
   right: -35px;
   width: 88px;
   height: 88px;
-  background: #0cc652;
+  background: #540cc6;
   opacity: 0.2;
   border-radius: 8px;
   transform: rotate(45deg);
@@ -3536,3 +3536,32 @@ img {
   vertical-align: middle;
   border-style: none;
 }
+
+/*-----------*/
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/*-----------*/

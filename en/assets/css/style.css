@@ -12,6 +12,7 @@ body {
   font-family: 'Almarai', sans-serif;
   color: #444444;
   direction: ltr;
+  text-transform:capitalize;
 }
 
 a {
@@ -257,6 +258,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   border: 2px solid #47b2e4;
   font-weight: 600;
+  margin-left: 10px;
 }
 
 .get-started-btn:hover {
@@ -446,7 +448,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #47b2e4;
 }
 
-#hero .animated {
+header .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
@@ -3441,7 +3443,7 @@ a {
   right: -35px;
   width: 88px;
   height: 88px;
-  background: #0cc652;
+  background: #290cc6;
   opacity: 0.2;
   border-radius: 8px;
   transform: rotate(45deg);
@@ -3453,7 +3455,7 @@ a {
   right: -35px;
   width: 88px;
   height: 88px;
-  background: #0cc652;
+  background: #540cc6;
   opacity: 0.2;
   border-radius: 8px;
   transform: rotate(45deg);
@@ -3536,3 +3538,4 @@ img {
   vertical-align: middle;
   border-style: none;
 }
+/*--------*/
