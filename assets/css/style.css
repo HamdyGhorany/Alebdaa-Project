@@ -456,7 +456,7 @@ header .animated {
     text-align: center;
   }
   .logo {
-    display: ;
+    display: none;
   }
   #hero .animated {
     -webkit-animation: none;
