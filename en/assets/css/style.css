@@ -329,15 +329,15 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
-.mobile-nav .drop-down > a:after {
+.mobile-nav .drop-down > a:before {
   content: "\ea99";
   font-family: IcoFont;
-  padding-right: 10px;
+  padding-left: 10px;
   position: absolute;
-  left: 15px;
+  right: 15px;
 }
 
-.mobile-nav .active.drop-down > a:after {
+.mobile-nav .active.drop-down > a:before {
   content: "\eaa1";
 }
 
