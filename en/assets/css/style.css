@@ -255,6 +255,9 @@ h6 {
   .nav-menu .drop-down .drop-down > a:after {
     content: "\ea9d";
   }
+  #header {
+    padding: 30px 0;
+  }
 }
 
 /* Get Startet Button */
