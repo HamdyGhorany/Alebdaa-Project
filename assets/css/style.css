@@ -280,6 +280,9 @@ h6 {
     margin: 0 48px 0 0;
     padding: 6px 20px 7px 20px;
   }
+  .skills .progress .skill {
+    font-size: 9px;
+  }
 }
 
 /* Mobile Navigation */
@@ -3644,6 +3647,7 @@ img {
   width: 5px;
   height: 5px;
 }
+/*
 @media (max-width: 768px) {
   .main-carousel {
     width: 50vw;
@@ -3660,4 +3664,5 @@ img {
     transition:  0.2s ease;
   }
 }
+*/
 /*--------------*/

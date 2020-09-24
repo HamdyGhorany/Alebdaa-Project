@@ -289,6 +289,9 @@ h6 {
     right: 20px;
     
   }
+  .skills .progress .skill {
+    font-size: 9px;
+  }
 }
 
 /* Mobile Navigation */
