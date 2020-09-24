@@ -205,25 +205,11 @@
 
 
 
-var swiper = new Swiper('.swiper-container', {
-  effect: 'flip',
-  grabCursor: true,
-  pagination: {
-    el: '.swiper-pagination',
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+$('.main-carousel').flickity({
+  // options
+  wrapAround: true,
+  adaptiveHeight: true,
+  imagesLoaded: true,
+  autoPlay: true
 });
-
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 3,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
-
 

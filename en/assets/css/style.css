@@ -119,7 +119,8 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background-image: url(https://startbootstrap.com/assets/img/overlay.svg),
+  linear-gradient(45deg, #dd3d31 0%, #2328d2 100%);
 }
 
 #header .logo {
@@ -461,7 +462,15 @@ h6 {
 }
 
 header .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+header .animated1 {
+  animation: up-down 0.5s ease-in-out infinite alternate-reverse both;
+
+}
+header .animated2 {
+  animation: up-down 0.25s ease-in-out infinite alternate-reverse both;
+
 }
 
 @media (max-width: 991px) {
@@ -1688,7 +1697,8 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: url(https://startbootstrap.com/assets/img/overlay.svg),
+  linear-gradient(45deg, #dd3d31 0%, #2328d2 100%);
 }
 
 #footer .footer-newsletter {
@@ -2122,11 +2132,11 @@ section {
 }
 
 .timeline-page .timeline-item .date-label-left::after {
-  right: -45px;
+  right: 5px;
 }
 
 .timeline-page .timeline-item .duration-right::after {
-  left: -45px;
+  left: -5px;
 }
 
 .timeline-page .timeline-item .works-description-right {
@@ -3306,6 +3316,8 @@ a {
 .masthead .masthead-cards .card:hover {
   margin-top: -0.25rem;
   margin-bottom: 0.25rem;
+  transform: rotate(360deg);
+
 }
 
 .masthead .masthead-cards .card:active {
@@ -3570,3 +3582,25 @@ img {
   border-style: none;
 }
 /*--------*/
+.ti-cursor {
+  display: none !important;
+}
+/*---------*/
+.main-carousel {
+  width: 75vw;
+  margin: auto;
+}
+.carousel-cell {
+
+}
+.carousel-cell img {
+  width:25vw;
+  height: auto;
+  transform: scale(0.75);
+  transition:  0.2s ease;
+}
+
+.carousel-cell.is-selected img {
+  transform: scale(1);
+}
+.flickity-slider {}
