@@ -56,10 +56,15 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="index.html">شبكة الإبداع
-          <br />
-          <small style="font-size: 13px">للإدارة التسويقية</small>
-        </a></h1>
+      <h1 class="logo mr-auto" style="color: #fff;"><a href="index.html">
+        <h1 id="typit" style="font-size: 20px;"></h1>
+      </a>
+
+          
+      </h1>
+      <small style="font-size: 13px; padding-left:30px" data-aos="fade-right"
+          data-aos-duration="8000"
+          data-aos-easing="ease-in-sine" >للإدارة التسويقية</small>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -178,10 +183,21 @@
     </a>
   </div>
   <div class="carousel-cell">
+    <a data-fancybox href="https://youtu.be/lPtFEa6idnA">
+      <img src="http://perisher.oots.co/resources/images/epic-benefits/slide-1.jpg" alt="">
+      </a>
+  </div>
+  <div class="carousel-cell">
+    <a data-fancybox href="https://www.youtube.com/watch?v=rdZRAq_CTDY">
+      <img src="http://perisher.oots.co/resources/images/epic-benefits/slide-2.jpg" alt="">
+    </a>
+  </div>
+  <div class="carousel-cell">
     <a data-fancybox href="https://www.youtube.com/watch?v=d-1T0yHV-i8">
       <img src="http://perisher.oots.co/resources/images/epic-benefits/slide-3.jpg" alt="">
     </a>
   </div>
+  
 </div>
 
 
@@ -439,7 +455,6 @@
 
       </div>
     </div>
-
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
@@ -456,7 +471,14 @@
               <div class="address">
                 <i class="icofont-google-map"></i>
                 <h4>العنوان:</h4>
-                <p>64 شارع العروبة المريوطية - هرم</p>
+                <br />
+
+                <p>
+
+                   مركز 5 ستارز مكتب : 1401-18
+              <br />
+              صندوق بريد : 238798
+                </p>
               </div>
 
               <div class="email">
@@ -472,15 +494,12 @@
                 <h4>الإتصال :</h4>
                 <p>
                   <br />
-                  <strong>الموبايل:</strong> <a href="tel:+01097912658">+01097912658</a> <br>
-                  <strong>الهاتف:</strong> <a href="tel:0233871397">0233871397</a> <br>
-                  <strong>الهاتف:</strong> <a href="tel:0233871398">0233871398</a> <br>
-                  <strong>فاكس:</strong> <a href="tel:0233871399">0233871399</a> <br>
-    
-    
-    
-    
-                  <br>
+                  <strong>الهاتف:</strong> <a href="tel:+97145780055">+97145780055</a>
+
+
+
+
+              <br>
                 </p>
               </div>
 
@@ -559,6 +578,16 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h3>شبكة الإبداع</h3>
             <p>
+              <span style="color: rebeccapurple;"> الإمارات </span>
+              : مركز 5 ستارز مكتب : 1401-18
+              <br />
+              صندوق بريد : 238798
+              <br />
+              <strong>الهاتف:</strong> <a href="tel:+97145780055">+97145780055</a> <br>
+
+              <br>
+              <strong>البريد الإلكتروني:</strong> <a href="email:info@elbdaa.com">info@elbdaa.com</a> <br>
+              <br/>
               <span style="color: rebeccapurple;"> مصر</span>
               : 64 شارع العروية - المريوطية
               <br />
@@ -572,16 +601,7 @@
 
 
 
-              <br>
-              <span style="color: rebeccapurple;"> الإمارات </span>
-              : مركز 5 ستارز مكتب : 1401-18
-              <br />
-              صندوق بريد : 238798
-              <br />
-              <strong>الهاتف:</strong> <a href="tel:+97145780055">+97145780055</a> <br>
-
-              <br>
-              <strong>البريد الإلكتروني:</strong> <a href="email:info@elbdaa.com">info@elbdaa.com</a> <br>
+            
             </p>
           </div>
 
@@ -667,9 +687,33 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="assets/js/flickity.pkgd.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
+<script src="assets/js/typeit.min.js"></script>
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
+   <script>
+    new TypeIt('#typit')
+      .type('')
+      .exec(async () => {
+        await new Promise((resolve, reject) => {
+          setTimeout(() => {
+            return resolve();
+          }, 100)
+        });
+      })
+      .type('شبكة الإبداع')
+      .go();
+    new TypeIt('#typit1')
+      .type('شركة متخصصة في تصميم وتطوير المواقع الإلكترونية وتصميمات الجرافيكس والفيديو موشن وأعمال الميديا برودكشن وإدارة المحتوى ')
+      .exec(async () => {
+        await new Promise((resolve, reject) => {
+          setTimeout(() => {
+            return resolve();
+          }, 10000)
+        });
+      })
+      .type('')
+      .go();
+  </script>
 
 </body>
 

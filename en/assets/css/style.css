@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Almarai", sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #444444;
   direction: ltr;
   text-transform: capitalize;
@@ -114,7 +114,7 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 #header.header-scrolled,
@@ -122,15 +122,18 @@ h6 {
   background-image: url(https://startbootstrap.com/assets/img/overlay.svg),
   linear-gradient(45deg, #dd3d31 0%, #2328d2 100%);
 }
-
+#header small {
+  position: fixed;
+  top: 50px;
+  color: #fff;
+}
 #header .logo {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 #header .logo a {
@@ -292,6 +295,8 @@ h6 {
   .skills .progress .skill {
     font-size: 9px;
   }
+
+  
 }
 
 /* Mobile Navigation */
@@ -491,8 +496,6 @@ header .animated2 {
  
     .logo {
       position: absolute;
-      left: 10px;
-      text-align: center;
       top: 10px;
       font-size: 20px !important;
     }
@@ -522,6 +525,7 @@ header .animated2 {
   #hero .hero-img img {
     width: 70%;
   }
+  #
 }
 
 @media (max-width: 575px) {
@@ -3494,6 +3498,8 @@ a {
   position: relative;
   border-radius: 2px;
   overflow: hidden;
+  transition: all ease-in-out 0.4s;
+
 }
 .price-card:before {
   position: absolute;
@@ -3518,6 +3524,13 @@ a {
   opacity: 0.2;
   border-radius: 8px;
   transform: rotate(45deg);
+}
+.price-card:hover {
+  transform: translateY(-10px);
+}
+
+.price-card:hover h4 a {
+  color: #47b2e4;
 }
 .price-card h2 {
   font-size: 26px;
@@ -3603,16 +3616,16 @@ img {
 }
 /*---------*/
 .main-carousel {
-  width: 75vw;
+  width: 80vw;
   margin: auto;
 }
 .carousel-cell {
 
 }
 .carousel-cell img {
-  width:25vw;
+  width:20vw;
   height: auto;
-  transform: scale(0.75);
+  transform: scale(0.77);
   transition:  0.2s ease;
 }
 
@@ -3620,7 +3633,11 @@ img {
   transform: scale(1);
 }
 .flickity-slider {}
-.flickity-page-dots .dot {
-  width: 5px;
-  height: 5px;
+.carousel-cell.is-selected img {
+  transform: scale(1.1);
+}
+
+.flickity-slider {}
+.carousel-cell.is-selected img {
+  transform: scale(1.1);
 }

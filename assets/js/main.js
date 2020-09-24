@@ -210,6 +210,9 @@ $('.main-carousel').flickity({
   wrapAround: true,
   adaptiveHeight: true,
   imagesLoaded: true,
-  autoPlay: true
+  autoPlay: true,
+  pageDots: false
+
 });
+
 
