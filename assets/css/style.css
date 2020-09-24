@@ -3636,3 +3636,22 @@ img {
   transform: scale(1);
 }
 .flickity-slider {}
+.flickity-page-dots .dot {
+  width: 5px;
+  height: 5px;
+}
+@media (max-width: 768px) {
+  .main-carousel {
+    width: 50vw;
+    margin: auto;
+  }
+  .carousel-cell {
+  
+  }
+  .carousel-cell img {
+    width:30vw;
+    height: auto;
+    transform: scale(0.85);
+    transition:  0.2s ease;
+  }
+}

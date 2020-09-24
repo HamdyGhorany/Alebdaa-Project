@@ -3604,3 +3604,7 @@ img {
   transform: scale(1);
 }
 .flickity-slider {}
+.flickity-page-dots .dot {
+  width: 5px;
+  height: 5px;
+}
