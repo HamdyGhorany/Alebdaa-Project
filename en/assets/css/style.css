@@ -281,6 +281,10 @@ h6 {
   .get-started-btn {
     margin: 0 48px 0 0;
     padding: 6px 20px 7px 20px;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    
   }
 }
 
@@ -478,9 +482,15 @@ header .animated2 {
     height: 100vh;
     text-align: center;
   }
-  .logo {
-    display: none;
-  }
+ 
+    .logo {
+      position: absolute;
+      left: 10px;
+      text-align: center;
+      top: 10px;
+      font-size: 20px !important;
+    }
+
   #hero .animated {
     -webkit-animation: none;
     animation: none;

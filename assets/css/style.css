@@ -482,7 +482,11 @@ header .animated3 {
     text-align: center;
   }
   .logo {
-    display: none;
+    position: absolute;
+    left: 10px;
+    text-align: center;
+    top: 10px;
+    font-size: 20px !important;
   }
   #hero .animated {
     -webkit-animation: none;
