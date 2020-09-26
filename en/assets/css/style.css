@@ -9,7 +9,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Cairo', sans-serif;
   color: #444444;
   direction: ltr;
   text-transform: capitalize;
@@ -82,7 +82,7 @@ h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-.back-to-top {
+.back-top {
   position: fixed;
   display: none;
   right: 15px;
@@ -90,7 +90,7 @@ h6 {
   z-index: 99999;
 }
 
-.back-to-top i {
+.back-top i {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,7 +103,34 @@ h6 {
   transition: all 0.4s;
 }
 
-.back-to-top i:hover {
+.back-top i:hover {
+  background: #209dd8;
+  color: #fff;
+}
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.messenger {
+  position: fixed;
+  right: 60px;
+  bottom: 15px;
+  z-index: 99999;
+}
+
+.messenger i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background: #47b2e4;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.messenger i:hover {
   background: #209dd8;
   color: #fff;
 }
@@ -114,7 +141,7 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 #header.header-scrolled,
@@ -124,7 +151,7 @@ h6 {
 }
 #header small {
   position: fixed;
-  top: 50px;
+  top: 60px;
   color: #fff;
 }
 #header .logo {
@@ -295,6 +322,11 @@ h6 {
   .skills .progress .skill {
     font-size: 9px;
   }
+  #header small {
+  position: fixed;
+  top: 40px;
+  color: #fff;
+}
 
   
 }
@@ -2041,7 +2073,7 @@ section {
 
 .price-item .price-top h2 sup {
   top: 13px;
-  right: -5px;
+  left: -5px;
   font-size: 0.35em;
   font-weight: 500;
   vertical-align: top;
