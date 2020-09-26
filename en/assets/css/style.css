@@ -703,7 +703,7 @@ section {
 
 .about .content ul i {
   position: absolute;
-  right: 0;
+  left: -24px;
   top: 2px;
   font-size: 20px;
   color: #47b2e4;
@@ -3362,7 +3362,7 @@ a {
   font-weight: 800;
   letter-spacing: 0.05rem;
   color: #212529;
-  transition: 0.15s all;
+  transition: 0.5s all;
 }
 
 .masthead .masthead-cards .card:hover {

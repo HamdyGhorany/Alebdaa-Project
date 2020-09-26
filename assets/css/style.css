@@ -3357,7 +3357,7 @@ a {
   font-weight: 800;
   letter-spacing: 0.05rem;
   color: #212529;
-  transition: 0.15s all;
+  transition: 0.5s all;
 }
 
 .masthead .masthead-cards .card:hover {
