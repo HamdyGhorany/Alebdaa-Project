@@ -3696,3 +3696,11 @@ img {
 .box14 .icon li a:hover{background:#d79719;border-color:#d79719}
 @media only screen and (max-width:990px){.box14{margin-bottom:30px}
 }
+/*---------*/
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
