@@ -243,3 +243,5 @@ $(".main-carousel").flickity({
   autoPlay: true,
   pageDots: false,
 });
+
+
