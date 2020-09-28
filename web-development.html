@@ -427,7 +427,7 @@
                       <span>ترويج أدارة محركات البحث</span>
                     </li>
                   </ul>
-                  <a href="#contact" class="btn btn-custom">أطلب الآن</a>
+                  <div id="paypal-button-container1"></div>
                 </div>
               </div>
             </div>
@@ -464,7 +464,7 @@
                       <span>ترويج أدارة محركات البحث</span>
                     </li>
                   </ul>
-                  <a href="#contact" class="btn btn-custom btn-light">أطلب الآن</a>
+                  <div id="paypal-button-container2"></div>
                 </div>
               </div>
             </div>
@@ -501,9 +501,7 @@
                       <span>ترويج أدارة محركات البحث</span>
                     </li>
                   </ul>
-                  <div id="paypal-button-container"></div>
-
-                  <a href="#contact" class="btn btn-custom">أطلب الآن</a>
+                  <div id="paypal-button-container3"></div>
                 </div>
               </div>
             </div>
@@ -703,7 +701,7 @@
               <img class="img-fluid i-img" src="./assets/v.png" />
               <img class="img-fluid i-img" src="./assets/paypal.png" />
             </div>
-                <div class="social-links mt-3">
+            <div class="social-links mt-3">
               <img class="img-fluid i-img" src="./assets/logo.png" />
               <img class="img-fluid i-img" src="./assets/cib.png" />
               <img style="width: 40px; height: 40px;" class="img-fluid" src="./assets/vo.png" />
@@ -713,12 +711,12 @@
               <img class="img-fluid i-img" src="./assets/emarat.png" />
               <img class="img-fluid i-img" src="./assets/dubai.png" />
             </div>
-              <style>
-                .footer-links .i-img {
-                  width: 60px !important;
-                  font-size: 40px;
-                }
-              </style>
+            <style>
+              .footer-links .i-img {
+                width: 60px !important;
+                font-size: 40px;
+              }
+            </style>
           </div>
 
         </div>
@@ -777,34 +775,81 @@
       .type('')
       .go();
   </script>
- <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+  <script>
+    // Render the PayPal button into #paypal-button-container
+    paypal.Buttons({
 
- <script>
-     // Render the PayPal button into #paypal-button-container
-     paypal.Buttons({
+      // Set up the transaction
+      createOrder: function (data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '99'
+            }
+          }]
+        });
+      },
 
-         // Set up the transaction
-         createOrder: function(data, actions) {
-             return actions.order.create({
-                 purchase_units: [{
-                     amount: {
-                         value: '0.01'
-                     }
-                 }]
-             });
-         },
-
-         // Finalize the transaction
-         onApprove: function(data, actions) {
-             return actions.order.capture().then(function(details) {
-                 // Show a success message to the buyer
-                 alert('Transaction completed by ' + details.payer.name.given_name + '!');
-             });
-         }
+      // Finalize the transaction
+      onApprove: function (data, actions) {
+        return actions.order.capture().then(function (details) {
+          // Show a success message to the buyer
+          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+        });
+      }
 
 
-     }).render('#paypal-button-container');
- </script>
+    }).render('#paypal-button-container1');
+    // Render the PayPal button into #paypal-button-container
+    paypal.Buttons({
+
+      // Set up the transaction
+      createOrder: function (data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '299'
+            }
+          }]
+        });
+      },
+
+      // Finalize the transaction
+      onApprove: function (data, actions) {
+        return actions.order.capture().then(function (details) {
+          // Show a success message to the buyer
+          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+        });
+      }
+
+
+    }).render('#paypal-button-container2');
+    // Render the PayPal button into #paypal-button-container
+    paypal.Buttons({
+
+      // Set up the transaction
+      createOrder: function (data, actions) {
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '399'
+            }
+          }]
+        });
+      },
+
+      // Finalize the transaction
+      onApprove: function (data, actions) {
+        return actions.order.capture().then(function (details) {
+          // Show a success message to the buyer
+          alert('Transaction completed by ' + details.payer.name.given_name + '!');
+        });
+      }
+
+
+    }).render('#paypal-button-container3');
+  </script>
 </body>
 
 </html>
